@@ -3,8 +3,7 @@ import config
 
 @app.route('/')
 def index():
-  return 'server started on '+str(config.PORT)+' PORT '+str(config.ENV)
+  return 'server started.'
   
 if __name__ == '__main__':
-  print(app.url_map)
-  app.run(port=config.PORT)
+  app.run()
